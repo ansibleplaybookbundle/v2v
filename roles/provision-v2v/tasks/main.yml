@@ -1,0 +1,9 @@
+- name: download run script
+  get_url:
+    url: https://github.com/kubevirt/v2v-job/releases/download/v0.3.0/run.sh
+    dest: /tmp/
+    mode: 0755
+- name: execute run script
+  shell: ./run.sh {{ vm_name }} {{ username }} {{ password }} {{ url }}
+  args:
+    chdir: /tmp/
