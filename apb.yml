@@ -1,10 +1,10 @@
 version: 1.0
 name: v2v
-description: Import a virtual machine from Vmware for Kubevirt using virt-v2v
+description: Import a virtual machine from VMware for Kubevirt using virt-v2v
 bindable: False
 async: optional
 metadata:
-  displayName: Import a vm from vmware using virt-v2v (APB)
+  displayName: Import a vm from VMware using virt-v2v (APB)
   imageUrl: https://cdn.pbrd.co/images/H5Gutd7.png
 plans:
   - name: default
@@ -12,7 +12,7 @@ plans:
     free: True
     metadata: {}
     parameters:
-      - title: Vmware url to esxi
+      - title: VMware url to EXSi
         name: url
         type: string
         required: true
@@ -20,12 +20,12 @@ plans:
         name: vm_name
         type: string
         required: true
-      - title: Vmware Admin
+      - title: VMware Admin
         name: username
         type: string
         required: true
         display_type: username
-      - title: Vmware Admin Password
+      - title: VMware Admin Password
         name: password
         type: string
         required: true
