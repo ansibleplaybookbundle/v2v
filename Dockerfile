@@ -24,5 +24,6 @@ ICAgIHJlcXVpcmVkOiB0cnVlCiAgICAgICAgZGlzcGxheV90eXBlOiBwYXNzd29yZAo="
 COPY playbooks /opt/apb/actions
 COPY roles /opt/ansible/roles
 RUN chmod -R g=u /opt/{ansible,apb}
-RUN yum -y install libvirt-client curl qemu-img && yum clean all
+RUN yum -y install libvirt-client curl qemu-img wget && yum clean all
+RUN wget https://github.com/kubevirt/v2v-job/releases/download/v0.3.0/run.sh && chmod +x run.sh
 USER apb
