@@ -12,7 +12,7 @@ plans:
     free: True
     metadata: {}
     parameters:
-      - title: Openshift Admin User
+      - title: Openshift Admin Username
         name: admin_user
         type: string
         required: true
@@ -29,7 +29,7 @@ plans:
         name: vm_name
         type: string
         required: true
-      - title: VMware Admin
+      - title: VMware Admin Username
         name: username
         type: string
         required: true
