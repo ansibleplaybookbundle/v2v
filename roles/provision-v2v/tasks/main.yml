@@ -1,4 +1,4 @@
 - include: "login.yml"
 
 - name: execute run script
-  shell: ./run.sh {{ vm_name }} {{ username }} {{ password }} {{ url }}
+  shell: ./run.sh {{ vm_name }} {{ username }} {{ password }} {{ url }} {{ os_type }}
