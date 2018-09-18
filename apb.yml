@@ -39,3 +39,8 @@ plans:
         type: string
         required: true
         display_type: password
+      - title: Operating system type
+        name: os_type
+        default: linux
+        enum: ['linux', 'windows']
+        type: enum
